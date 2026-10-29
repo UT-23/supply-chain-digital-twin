@@ -1,0 +1,21 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-dotenv>=1.0
+
+# Database
+SQLAlchemy>=2.0.36
+psycopg[binary]>=3.2
+alembic>=1.14
+
+# Agent (LLM reasoning) -- LangGraph state machine over Groq
+langgraph>=0.2
+langchain-groq>=0.2
+langchain-core>=0.3
+# Gemini is reached through its OpenAI-compatible endpoint, so the generic
+# OpenAI chat model serves it with the same bound tool schemas.
+langchain-openai>=0.2
+# Still used for the credential check and the cheap quota probes.
+openai>=1.60
+
+# Dataset loading
+pandas>=2.2

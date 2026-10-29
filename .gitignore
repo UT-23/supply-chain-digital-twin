@@ -25,3 +25,27 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Raw datasets (large, not committed)
+data/raw/*
+!data/raw/.gitkeep
+
+# Probe output
+agent_probe_results.json
+memory_ab_results.json
+
+# Secrets / credentials
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+*credentials*.json
+service-account*.json
+
+# Local databases
+*.sqlite
+*.sqlite3
